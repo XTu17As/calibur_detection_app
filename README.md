@@ -3,7 +3,10 @@
   <h3 align="center">Calibur Detection System</h3>
 
   <p align="center">
-    Aplikasi Deteksi Produk Snack Cerdas Menggunakan Deep Learning (TinyViT + FCOS)
+    Smart Snack Product Detection System for Retail Efficiency
+    <br />
+    ML-powered product recognition application using TinyViT + FCOS
+    <br />
     <br />
     <a href="#">View Demo</a>
     ·
@@ -31,6 +34,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#api-documentation">API Documentation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
@@ -38,14 +42,12 @@
 
 ## About The Project
 
-**Calibur Detection System** adalah aplikasi cerdas yang dirancang untuk kebutuhan penelitian Skripsi, bertujuan untuk mendeteksi dan mengklasifikasikan produk makanan ringan (snack) secara *real-time*. Menggunakan arsitektur *Deep Learning* modern (TinyViT + FCOS), aplikasi ini dapat mengenali berbagai varian produk dengan akurasi tinggi meskipun dalam kondisi pencahayaan atau sudut pandang yang menantang.
+**Calibur** is an intelligent product detection system designed to automate the recognition of snack foods in retail environments. Developed as a thesis project, it leverages advanced Deep Learning architectures (TinyViT + FCOS) to detect and classify specific Indonesian snack brands (such as Chiki Twist, Chitato, etc.) in real-time.
 
 **Why Calibur?**
-* Membantu otomatisasi pengenalan produk ritel (Chiki Twist, Chitato, dll) secara efisien.
-* Menggabungkan kecepatan *inference* TinyViT dengan antarmuka web modern berbasis Vue 3.
-* Menyediakan visualisasi *bounding box* yang akurat untuk analisis stok atau *checkout*.
-
-Sistem ini mengintegrasikan *backend* Python untuk pemrosesan AI dan *frontend* Vue.js yang responsif untuk pengalaman pengguna yang mulus.
+* Retail checkout processes and inventory management often suffer from manual inefficiencies.
+* Standard object detection models are often too heavy for edge deployment; Calibur optimizes this using TinyViT.
+* The system combines real-time object detection with a modern web interface to provide instant feedback through visual bounding boxes, making stock monitoring faster and more accurate.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,22 +63,22 @@ Sistem ini mengintegrasikan *backend* Python untuk pemrosesan AI dan *frontend* 
 
 ## Features
 
-🤖 **Advanced Detection:** Menggunakan TinyViT + FCOS pipeline dengan akurasi tinggi.
-⚡ **Real-time Inference:** Pemrosesan gambar cepat untuk deteksi langsung dari kamera.
-📱 **Responsive UI:** Dibangun dengan Vue 3 & Vite untuk performa antarmuka yang ringan.
-📦 **Product Classification:** Mampu membedakan varian produk spesifik (Brand & Rasa).
-📊 **Visual Feedback:** Menampilkan *confidence score* dan *bounding box* secara instan.
-🇮🇩 **Indonesian Context:** Dataset dilatih khusus untuk produk pasar Indonesia.
+🤖 **ML-Powered Detection:** TinyViT + FCOS pipeline optimized for high throughput.
+📱 **Responsive Design:** Modern Vue 3 interface usable on tablets and desktops.
+⚡ **Real-time Inference:** Live camera feed processing with low latency.
+📦 **Multi-Class Recognition:** Accurately distinguishes between similar snack packaging variants.
+📊 **Visual Analytics:** Instant confidence scores and bounding box visualization.
+🔒 **Local Processing:** Inference runs locally ensuring data privacy and speed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
-Ikuti langkah-langkah di bawah ini untuk menjalankan sistem Calibur di lingkungan lokal Anda.
+Follow these steps to set up Calibur locally for development.
 
 ### Prerequisites
 
-Pastikan Anda telah menginstal perangkat lunak berikut:
+Ensure you have the following installed:
 
 * **Node.js 18+**
     ```sh
@@ -89,26 +91,26 @@ Pastikan Anda telah menginstal perangkat lunak berikut:
 
 ### Installation
 
-1.  **Extract the Project**
-    Ekstrak file `vue-project.rar` ke direktori kerja Anda.
+1.  **Extract Project Files**
+    Since the source code is provided in archives, first extract `vue-project.rar` to your workspace.
 
 2.  **Set up the Frontend**
-    Masuk ke folder proyek Vue dan install dependensi.
     ```sh
     cd vue-project
     npm install
+    cp .env.example .env.local
     ```
 
-3.  **Configure Environment**
-    Buat file `.env` jika diperlukan untuk konfigurasi API URL.
+3.  **Configure Environment Variables**
+    Edit `frontend/.env.local` to point to your local ML backend:
     ```env
     VITE_API_URL=http://localhost:8000
     ```
 
-4.  **Set up the ML Service (Backend)**
-    (Asumsi Anda memiliki folder backend terpisah atau di dalam `training_code`)
+4.  **Set up the ML Service**
+    Navigate to your backend/training directory:
     ```sh
-    cd backend-service
+    cd ../backend
     python -m venv venv
     # Windows
     venv\Scripts\activate
@@ -117,20 +119,19 @@ Pastikan Anda telah menginstal perangkat lunak berikut:
     pip install -r requirements.txt
     ```
 
-5.  **Download Trained Models**
-    Pastikan model berikut tersedia di direktori `models/`:
-    * `Skripsi_Aug_512_from1080_alt4.rar` (Dataset/Model Utama)
-    * `Skripsi_SplitThenAug_384_Threads_frontal_v5.rar` (Model Eksperimen)
+5.  **Prepare Models & Datasets**
+    Extract the model archives into the `models/` directory:
+    * `Skripsi_Aug_512_from1080_alt4.rar` (Primary Model)
+    * `Skripsi_SplitThenAug_384_Threads_frontal_v5.rar` (Experimental Model)
 
 6.  **Start Development Servers**
-    * **Terminal 1 (Frontend):**
-        ```sh
-        npm run dev
-        ```
-    * **Terminal 2 (ML Service):**
-        ```sh
-        uvicorn main:app --reload --port 8000
-        ```
+    ```sh
+    # Terminal 1 - Frontend
+    npm run dev
+
+    # Terminal 2 - ML Service
+    uvicorn main:app --reload --host 0.0.0.0 --port 8000
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,18 +139,20 @@ Pastikan Anda telah menginstal perangkat lunak berikut:
 
 **Basic Detection**
 
-1.  Buka browser dan navigasi ke `http://localhost:5173`.
-2.  Izinkan akses kamera jika diminta.
-3.  Arahkan kamera ke produk snack target.
-4.  Sistem akan menampilkan kotak deteksi (*bounding box*) dan nama produk.
+1.  Navigate to `http://localhost:5173`.
+2.  Click **"Start Camera"**.
+3.  Allow browser camera access.
+4.  Point camera at a snack product (e.g., Chiki Twist).
+5.  Get instant classification with confidence scores and bounding boxes.
 
 **API Usage**
 
 ```javascript
-// Contoh request klasifikasi gambar
+// Classify product image frame
 const response = await fetch("http://localhost:8000/api/predict", {
   method: "POST",
-  body: formData, // FormData berisi file gambar
+  body: formData, // FormData with image file
 });
+
 const result = await response.json();
-// Returns: { predictions: [{ label: "Chiki Twist", score: 0.98, box: [...] }] }
+// Returns: { success: true, predictions: [ { label: "Chiki Twist", score: 0.98, box: [...] } ] }
