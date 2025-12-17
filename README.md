@@ -168,17 +168,6 @@ Quality over quantity.
 Precision over noise.
 
 ---
-
-## 🟢 Status
-
-<div align="center">
-
-**Status:** Operational
-
-</div>
-
----
-
 <div align="center">
 
 ### *i don't even know anymore*
