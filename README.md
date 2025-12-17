@@ -1,10 +1,10 @@
 <div align="center">
 
-# ⚔️ C A L I B U R
+# C A L I B U R
 
 ### **A Bleeding‑Edge Frontend Architecture Forged in Vue 3**
 
-> *Forged in code. Sharpened by speed. Deployed for glory.*
+# *Forged in code. Sharpened by speed. Deployed for glory.*
 
 ---
 
@@ -21,14 +21,6 @@
   <a href="https://vitest.dev/">
     <img src="https://img.shields.io/badge/Vitest-Lightning-729B1B?style=for-the-badge&logo=vitest&logoColor=white" />
   </a>
-</p>
-
-<p align="center">
-  <a href="#-the-vision">Vision</a> •
-  <a href="#-the-arsenal-tech-stack">Arsenal</a> •
-  <a href="#-the-blueprint-project-structure">Blueprint</a> •
-  <a href="#-mobilization-installation">Mobilization</a> •
-  <a href="#-contributing">Contributing</a>
 </p>
 
 </div>
