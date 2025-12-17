@@ -4,7 +4,7 @@
 
 ### **A Bleeding‑Edge Frontend Architecture Forged in Vue 3**
 
-# *Forged in code. Sharpened by speed. Deployed for glory.*
+> *Forged in code. Sharpened by speed. Deployed for glory.*
 
 ---
 
