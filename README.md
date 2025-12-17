@@ -1,4 +1,4 @@
-# [Nama Proyek Anda]
+# Calibur
 
 > Aplikasi Frontend Berbasis Vue 3 dan FastAPI.
 
