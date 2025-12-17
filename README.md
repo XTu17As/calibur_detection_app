@@ -26,13 +26,6 @@
   </p>
 
   <br />
-
-  <p align="center">
-    <a href="#-the-arsenal">The Arsenal</a> •
-    <a href="#-the-blueprint">The Blueprint</a> •
-    <a href="#-ignition-sequence">Ignition</a> •
-    <a href="#-deployment">Deployment</a>
-  </p>
 </div>
 
 <hr />
