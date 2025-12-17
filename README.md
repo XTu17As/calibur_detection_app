@@ -27,24 +27,6 @@
 
 ---
 
-## The Vision
-
-**Calibur** is not a template.
-It is a **frontend doctrine**.
-
-Built for engineers who value **clarity, performance, and scale**, Calibur provides a production‑ready Vue 3 architecture that removes friction from development while remaining brutally efficient in runtime execution.
-
-It is designed to:
-
-* Scale from MVP to enterprise without architectural regret
-* Maximize **Developer Experience (DX)** without sacrificing control
-* Enforce clean separation of concerns
-* Remain fast under pressure — both in dev and prod
-
-**Fast. Modular. Lethal.**
-
----
-
 ## The Arsenal (Tech Stack)
 
 We don’t bring knives to gunfights.
