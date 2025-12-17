@@ -26,6 +26,29 @@
   </p>
 
   <br />
+  ## Mobilization (Installation)
+
+Prepare your local environment. Follow these protocols strictly to initiate the system.
+
+### Phase 1: Prerequisites
+Ensure your machine is equipped with the necessary runtime:
+* **Node.js** (LTS Version required)
+* **npm** or **yarn**
+
+### Phase 2: Extraction & Initialization
+If you have received the source via archive (`.rar`/`.zip`), extract the payload to your workspace. Then, open your terminal and execute:
+
+```bash
+# 1. Enter the base of operations
+cd vue-project
+
+# 2. Equip dependencies (Download libraries)
+npm install
+
+# Phase 3: Ignition (Development)
+Spin up the local development server. This utilizes Vite's lightning-fast HMR.
+npm run dev
+```
 
   <p align="center">
     <a href="#the-vision">Vision</a> •
@@ -79,22 +102,16 @@ A clean architecture for a chaotic world. Here is how we organize the chaos:
 │   └── 📜 main.js       # The Entry Point
 ├── 📜 index.html        # The Canvas
 └── 📜 vite.config.js    # The Hyperdrive Configuration
+```
 
-## Mobilization (Installation)
+## Contributing
+# Calibur is open for reinforcements. If you have code that makes this system faster, stronger, or more efficient:
 
-Prepare your local environment. Follow these protocols strictly to initiate the system.
+# Fork the repository.
+# Create your Feature Branch (git checkout -b feature/Overclock).
+# Commit your upgrades.
+# Push to the branch.
+# Open a Pull Request.
 
-### Phase 1: Prerequisites
-Ensure your machine is equipped with the necessary runtime:
-* **Node.js** (LTS Version required)
-* **npm** or **yarn**
+<div align="center"> <br /> <i>Engineered for the bold.</i> <br /> <img src="https://www.google.com/search?q=https://img.shields.io/badge/Status-Operational-green.svg" alt="Status"> </div>
 
-### Phase 2: Extraction & Initialization
-If you have received the source via archive (`.rar`/`.zip`), extract the payload to your workspace. Then, open your terminal and execute:
-
-```bash
-# 1. Enter the base of operations
-cd vue-project
-
-# 2. Equip dependencies (Download libraries)
-npm install
