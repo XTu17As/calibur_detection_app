@@ -7,12 +7,6 @@
     <br />
     ML-powered product recognition application using TinyViT + FCOS
     <br />
-    <br />
-    <a href="#">View Demo</a>
-    ·
-    <a href="#">Report Bug</a>
-    ·
-    <a href="#">Request Feature</a>
   </p>
 </div>
 
