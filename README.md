@@ -1,9 +1,9 @@
 <div align="center">
 
-  <h1>⚔️ C A L I B U R ⚔️</h1>
+  <h1> C A L I B U R </h1>
   
   <p>
-    <strong>Aplikasi Frontend Berbasis Vue 3 dengan Arsitektur Modern</strong>
+    <strong>The Bleeding-Edge Frontend Architecture Forged in Vue 3</strong>
   </p>
 
   <p>
@@ -14,63 +14,68 @@
       <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
     </a>
     <a href="https://pinia.vuejs.org/">
-      <img src="https://img.shields.io/badge/Pinia-Map_State-FFD11B?style=for-the-badge&logo=pinia&logoColor=black" alt="Pinia" />
+      <img src="https://img.shields.io/badge/Pinia-State_God-FFD11B?style=for-the-badge&logo=pinia&logoColor=black" alt="Pinia" />
+    </a>
+    <a href="https://vitest.dev/">
+      <img src="https://img.shields.io/badge/Vitest-Lightning-729B1B?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest" />
     </a>
   </p>
 
   <p>
-    <i>"Ditempa dengan kode, dipertajam oleh Vite."</i>
+    <i>"Forged in code. Sharpened by speed. Deployed for glory."</i>
   </p>
 
   <br />
 
   <p align="center">
-    <a href="#-fitur-unggulan">Fitur</a> •
-    <a href="#-gudang-senjata-teknologi">Teknologi</a> •
-    <a href="#-peta-wilayah-struktur">Struktur</a> •
-    <a href="#-ritual-instalasi">Instalasi</a>
+    <a href="#-the-arsenal">The Arsenal</a> •
+    <a href="#-the-blueprint">The Blueprint</a> •
+    <a href="#-ignition-sequence">Ignition</a> •
+    <a href="#-deployment">Deployment</a>
   </p>
 </div>
 
 <hr />
 
-## 📖 Tentang Proyek
+## The Vision
 
-**Calibur** bukan sekadar antarmuka pengguna; ini adalah manifestasi dari pengembangan web modern. Dibangun di atas fondasi kokoh **Vue 3**, proyek ini dirancang untuk kecepatan, skalabilitas, dan pengalaman pengembang (*DX*) yang superior.
+**Calibur** isn't just a frontend template; it's a **declaration of performance**. 
 
-Kode sumber ini menggunakan *tooling* standar **Vite**, memastikan waktu *build* secepat kilat dan *Hot Module Replacement* (HMR) yang instan. Siap untuk dikembangkan, siap untuk di-deploy.
+Engineered for scalability and honed for developer experience (DX), this repository houses a next-generation User Interface built on the **Vue 3** reactive engine. Powered by the supersonic **Vite** build tool, Calibur eliminates the wait, delivering instantaneous Hot Module Replacement (HMR) and optimized production builds.
+
+**Fast. Modular. Lethal.**
 
 ---
 
-## 🛡️ Gudang Senjata (Teknologi)
+## The Arsenal (Tech Stack)
 
-Kami menggunakan serangkaian teknologi mutakhir untuk memastikan performa yang tak tertandingi:
+We don't bring knives to a gunfight. We use the absolute best tools in the modern JavaScript ecosystem:
 
-| Teknologi | Lencana | Deskripsi |
+| Weapon | Class | Capability |
 | :--- | :---: | :--- |
-| **Vue 3** | <img src="https://img.shields.io/badge/Core-Vue_3-4FC08D" /> | Menggunakan *Composition API* untuk logika yang modular. |
-| **Vite** | <img src="https://img.shields.io/badge/Build-Vite-646CFF" /> | *Build tool* generasi terbaru untuk HMR super cepat. |
-| **Pinia** | <img src="https://img.shields.io/badge/State-Pinia-FFD11B" /> | Manajemen *state* intuitif, pengganti spiritual Vuex. |
-| **Vue Router** | <img src="https://img.shields.io/badge/Nav-Router-35495E" /> | Navigasi SPA (*Single Page Application*) yang mulus. |
-| **Vitest** | <img src="https://img.shields.io/badge/Test-Vitest-729B1B" /> | Pengujian unit yang terintegrasi penuh dengan Vite. |
+| **Vue 3** | <img src="https://img.shields.io/badge/The_Core-4FC08D" /> | Utilizing the **Composition API** for surgical logic precision. |
+| **Vite** | <img src="https://img.shields.io/badge/The_Engine-646CFF" /> | Next-gen tooling. Blink and you'll miss the build time. |
+| **Pinia** | <img src="https://img.shields.io/badge/The_Brain-FFD11B" /> | Intuitive, type-safe, and modular State Management. |
+| **Vue Router** | <img src="https://img.shields.io/badge/The_Map-35495E" /> | Seamless SPA navigation and dynamic routing. |
+| **Vitest** | <img src="https://img.shields.io/badge/The_Shield-729B1B" /> | Blazing fast unit testing to ensure bulletproof logic. |
 
 ---
 
-## 🗺️ Peta Wilayah (Struktur)
+## The Blueprint (Structure)
 
-Struktur direktori disusun dengan rapi agar Anda tidak tersesat dalam kode:
+A clean architecture for a chaotic world. Here is how we organize the chaos:
 
 ```fs
 📂 calibur-project
-├── 📂 public           # Berkas statis publik
-├── 📂 src
-│   ├── 📂 assets       # 🎨 Gambar, font, dan gaya global
-│   ├── 📂 components   # 🧩 Komponen UI yang dapat digunakan kembali (LEGO bricks)
-│   ├── 📂 views        # 🖼️ Halaman utama yang dirender Router
-│   ├── 📂 stores       # 💾 Lumbung data global (Pinia Store)
-│   ├── 📂 router       # 🧭 Kompas navigasi aplikasi
-│   ├── 📂 utils        # 🛠️ Fungsi pembantu & logika umum
-│   ├── 📜 App.vue      # Akar dari segala komponen
-│   └── 📜 main.js      # Titik masuk aplikasi
-├── 📜 index.html       # Kanvas utama
-└── 📜 vite.config.js   # Konfigurasi dapur pacu
+├── 📂 public           # Static assets exposed to the world
+├── 📂 src              # THE BRAIN CENTER
+│   ├── 📂 assets       # Global styles, fonts, and images
+│   ├── 📂 components   # Atomic, reusable UI building blocks
+│   ├── 📂 views        # The grand stages (Pages/Routes)
+│   ├── 📂 stores       # The central nervous system (Pinia)
+│   ├── 📂 router       # Navigation logic
+│   ├── 📂 utils        # Helper functions & arcane magic
+│   ├── 📜 App.vue      # The Root Component
+│   └── 📜 main.js      # The Entry Point
+├── 📜 index.html       # The Canvas
+└── 📜 vite.config.js   # The Hyperdrive Configuration
