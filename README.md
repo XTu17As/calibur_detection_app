@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚔️ Calibur
+# Calibur
 
 ### *Aplikasi Frontend Modern Berbasis Vue 3*
 
