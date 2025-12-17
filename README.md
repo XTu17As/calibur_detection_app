@@ -1,43 +1,66 @@
-# [Nama Proyek Anda]
+<div align="center">
 
-> Aplikasi Frontend Berbasis Vue 3 dengan Arsitektur Modern.
+# ⚔️ Calibur
 
-Repositori ini berisi kode sumber (*source code*) untuk antarmuka pengguna (*frontend*) yang dibangun menggunakan kerangka kerja Vue 3. Proyek ini dikembangkan menggunakan *tooling* standar Vite untuk memastikan performa pengembangan yang optimal dan waktu *build* yang efisien.
+### *Aplikasi Frontend Modern Berbasis Vue 3*
 
-## 🛠️ Teknologi yang Digunakan
+[![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Pinia](https://img.shields.io/badge/Pinia-2.x-FFD859?style=for-the-badge&logo=pinia&logoColor=black)](https://pinia.vuejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Proyek ini memanfaatkan serangkaian teknologi modern untuk menjamin skalabilitas dan kemudahan pemeliharaan:
+*Bangun aplikasi web yang cepat, scalable, dan mudah dipelihara dengan stack teknologi terkini*
 
--   **[Vue 3](https://vuejs.org/)**: Kerangka kerja utama yang menggunakan Composition API untuk manajemen logika komponen yang lebih terstruktur.
--   **[Vite](https://vitejs.dev/)**: *Build tool* generasi terbaru yang menawarkan fitur *Hot Module Replacement* (HMR) yang sangat cepat.
--   **[Pinia](https://pinia.vuejs.org/)**: Pustaka manajemen *state* standar untuk Vue yang intuitif dan modular.
--   **[Vue Router](https://router.vuejs.org/)**: Pustaka resmi untuk manajemen navigasi dan *routing* pada aplikasi satu halaman (*Single Page Application*).
--   **[Vitest](https://vitest.dev/)**: Kerangka kerja pengujian unit yang terintegrasi dengan Vite.
+[🚀 Demo](#-demo) • [📖 Dokumentasi](#-dokumentasi) • [🎯 Features](#-fitur-utama) • [💻 Quick Start](#-quick-start)
 
-## 📂 Struktur Direktori
+---
 
-Berikut adalah penjelasan singkat mengenai struktur direktori dalam proyek ini:
+</div>
 
--   `src/assets` — Direktori untuk aset statis seperti gambar, ikon, dan gaya (*style*).
--   `src/components` — Kumpulan komponen UI yang dapat digunakan kembali (*reusable components*).
--   `src/views` — Komponen halaman utama yang dirender oleh Vue Router.
--   `src/stores` — Modul manajemen *state* global menggunakan Pinia.
--   `src/router` — Konfigurasi rute dan navigasi aplikasi.
--   `src/utils` — Fungsi utilitas dan *helper* untuk logika pemrograman umum.
+## 🌟 Tentang Calibur
 
-## 🚀 Panduan Instalasi dan Penggunaan
+**Calibur** adalah aplikasi frontend modern yang dibangun dengan Vue 3 Composition API, dirancang untuk memberikan pengalaman pengembangan yang optimal dan performa aplikasi yang luar biasa. Dengan memanfaatkan ekosistem Vue.js terbaru dan tooling generasi baru, Calibur siap menjadi fondasi kuat untuk proyek web Anda.
 
-Sebelum memulai, pastikan perangkat Anda telah terinstal **[Node.js](https://nodejs.org/)** (versi LTS disarankan).
+## ✨ Fitur Utama
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek di lingkungan lokal:
+<table>
+<tr>
+<td width="50%">
 
-### 1. Ekstraksi Berkas Proyek
-Dikarenakan kode sumber didistribusikan dalam format arsip, langkah pertama adalah mengekstrak berkas:
-1.  Unduh berkas `vue-project.rar`.
-2.  Ekstrak (unzip) isi berkas tersebut ke dalam direktori kerja pilihan Anda.
-3.  Buka terminal atau *command prompt* dan arahkan ke direktori hasil ekstraksi tersebut.
+### ⚡ Lightning Fast
+- Hot Module Replacement (HMR) instan
+- Build time yang sangat efisien
+- Optimasi bundle otomatis
 
-### 2. Instalasi Dependensi
-Unduh dan pasang seluruh pustaka yang diperlukan oleh proyek dengan menjalankan perintah berikut:
-```sh
-npm install
+</td>
+<td width="50%">
+
+### 🎨 Modern Architecture
+- Vue 3 Composition API
+- Type-safe dengan Vite
+- Modular component structure
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔄 State Management
+- Pinia untuk state global
+- Store yang reactive dan modular
+- DevTools integration
+
+</td>
+<td width="50%">
+
+### 🧪 Testing Ready
+- Vitest framework terintegrasi
+- Unit testing support
+- Component testing tools
+
+</td>
+</tr>
+</table>
+
+## 🛠️ Tech Stack
+
