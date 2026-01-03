@@ -265,7 +265,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-downloaded_models
+# Models
+downloaded_models/
 
 # Google Cloud credentials
 backend/service_account.json
