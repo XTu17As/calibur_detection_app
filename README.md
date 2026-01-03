@@ -1,153 +1,50 @@
-<div align="center">
+# vue-project
 
-# C A L I B U R
+This template should help get you started developing with Vue 3 in Vite.
 
-### **A Bleeding‑Edge Frontend Architecture Forged in Vue 3**
+## Recommended IDE Setup
 
-> *Forged in code. Sharpened by speed. Deployed for glory.*
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
----
+## Recommended Browser Setup
 
-<p>
-  <a href="https://vuejs.org/">
-    <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" />
-  </a>
-  <a href="https://vitejs.dev/">
-    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  </a>
-  <a href="https://pinia.vuejs.org/">
-    <img src="https://img.shields.io/badge/Pinia-State_God-FFD11B?style=for-the-badge&logo=pinia&logoColor=black" />
-  </a>
-  <a href="https://vitest.dev/">
-    <img src="https://img.shields.io/badge/Vitest-Lightning-729B1B?style=for-the-badge&logo=vitest&logoColor=white" />
-  </a>
-</p>
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-</div>
+## Customize configuration
 
----
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## The Arsenal (Tech Stack)
+## Project Setup
 
-We don’t bring knives to gunfights.
-We bring tools that win wars.
-
-| Weapon         | Role       | Purpose                                         |
-| -------------- | ---------- | ----------------------------------------------- |
-| **Vue 3**      | The Core   | Composition API for precise, maintainable logic |
-| **Vite**       | The Engine | Instant HMR and near‑zero build latency         |
-| **Pinia**      | The Brain  | Predictable, type‑safe state management         |
-| **Vue Router** | The Map    | Dynamic routing & SPA navigation                |
-| **Vitest**     | The Shield | Lightning‑fast unit testing                     |
-
-Each tool is chosen not for popularity — but for **battle‑tested effectiveness**.
-
----
-
-## The Blueprint (Project Structure)
-
-Order is power. Chaos is expensive.
-
-```fs
-📂 calibur-project
-├── 📂 public                # Static assets directly exposed
-├── 📂 src                   # CORE OPERATIONS
-│   ├── 📂 assets            # Global styles, fonts, images
-│   ├── 📂 components        # Reusable atomic UI units
-│   ├── 📂 views             # Route‑level pages
-│   ├── 📂 stores            # Global state (Pinia)
-│   ├── 📂 router            # Navigation & route guards
-│   ├── 📂 utils             # Shared helpers & utilities
-│   ├── 📜 App.vue           # Root component
-│   └── 📜 main.js           # Application entry point
-├── 📜 index.html            # Rendering canvas
-└── 📜 vite.config.js        # Build & tooling configuration
-```
-
-**Design philosophy:**
-
-* Components stay dumb
-* Views orchestrate behavior
-* Stores own state
-* Utilities stay pure
-
-This structure scales cleanly — without turning into a dependency graveyard.
-
----
-
-## Mobilization (Installation)
-
-Prepare your local environment. Follow protocol.
-
-### Phase 1 — Prerequisites
-
-Ensure the following are installed:
-
-* **Node.js** (LTS recommended)
-* **npm** or **yarn**
-
-Verify installation:
-
-```bash
-node -v
-npm -v
-```
-
----
-
-### Phase 2 — Extraction & Initialization
-
-If Calibur was received as an archive (`.zip` / `.rar`), extract it first.
-
-Then:
-
-```bash
-# Enter the base of operations
-cd calibur-project
-
-# Install dependencies
+```sh
 npm install
 ```
 
----
+### Compile and Hot-Reload for Development
 
-### Phase 3 — Ignition (Development)
-
-Engage the Vite engine:
-
-```bash
+```sh
 npm run dev
 ```
 
-The application will be available at:
+### Compile and Minify for Production
 
+```sh
+npm run build
 ```
-http://localhost:5173
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+npm run test:unit
 ```
 
-Hot Module Replacement is enabled.
-Blink and you’ll miss the reload.
+### Lint with [ESLint](https://eslint.org/)
 
----
-
-## Contributing
-
-Calibur welcomes reinforcements.
-
-If your code makes the system **faster, cleaner, or stronger**:
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
-
-Quality over quantity.
-Precision over noise.
-
----
-<div align="center">
-
-### *i don't even know anymore*
-
-</div>
+```sh
+npm run lint
+```

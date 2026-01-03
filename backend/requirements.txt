@@ -1,0 +1,32 @@
+# --- FastAPI Framework ---
+fastapi==0.119.0
+uvicorn==0.38.0
+starlette==0.48.0
+python-multipart==0.0.20
+pydantic==2.11.7
+pydantic_core==2.33.2
+
+# --- AI & Vision (CUDA 11.8 compatible) ---
+# Note: These will be installed via the .bat script with the correct index-url
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+timm==1.0.21
+opencv-python==4.11.0.86
+numpy==1.26.4
+pillow==11.3.0
+
+# --- Cloud & System ---
+google-api-python-client==2.185.0
+google-auth==2.40.3
+google-auth-oauthlib==1.2.2
+google-cloud-storage==2.19.0
+google-api-core==2.25.1
+psutil==7.1.0
+GPUtil==1.4.0
+
+# --- Utilities ---
+requests==2.32.5
+pyyaml==6.0.2
+tqdm==4.67.1
+typing_extensions==4.15.0
