@@ -167,5 +167,6 @@ Precision over noise.
 <div align="center">
 
 ### _i don't even know anymore_
+# _and no this is not hosted... good ol' local_
 
 </div>
